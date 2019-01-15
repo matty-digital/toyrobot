@@ -1,6 +1,6 @@
 # toybot-app
 
-Matt Bowyt coding challenge
+Matt Bowytz coding challenge
 
 see toybot.js for core functionality
 
