@@ -1,5 +1,31 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
 {{!-- Feel free to remove this! --}}
+<div class="container-fluid">
+  <div class="row text-center">
+    <h1 class="col-xs-12">Robots are AWESOME!</h1>
+  </div>
+  <hr>
+  <div class="row">
+    <input type="text" id="placeX">
+    <input type="text" id="placeY">
+    <input type="text" id="placedir">
+    <button class="btn btn-primary btn-lg btn-block" {{action 'place'}} >Place</button>
+  </div>
+  <hr>
+  <div class="row">
+    <input type="text" id="reportField">
+    <button class="btn btn-primary btn-lg btn-block" {{action 'report'}} >Move</button>
+  </div>
+  <hr>
+  <div class="row">
+    <input type="text" id="reportField">
+    <button class="btn btn-primary btn-lg btn-block" {{action 'left'}} >Left</button>
+  </div>
+  <hr>
+  <div class="row">
+    <input type="text" id="reportField">
+    <button class="btn btn-primary btn-lg btn-block" {{action 'right'}} >Right</button>
+  </div>
+</div>
 
 {{outlet}}
