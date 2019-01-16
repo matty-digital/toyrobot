@@ -32,6 +32,7 @@ let place = (x, y, f) => {
 // I want to move the robot now!
 let move = () => {
   if (botPlaced()) {
+    // make a clone, not a ref
     let newCoords = botCoords.slice(0);
 
     switch (botDirection) {
