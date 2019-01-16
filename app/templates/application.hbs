@@ -1,30 +1,35 @@
 {{!-- The following component displays Ember's default welcome message. --}}
 {{!-- Feel free to remove this! --}}
-<div class="container-fluid">
+<div class="container">
   <div class="row text-center">
-    <h1 class="col-xs-12">Robots are AWESOME!</h1>
+    <h1 class="col-xs-12">Toy Robot</h1>
   </div>
   <hr>
   <div class="row">
-    <input type="text" id="placeX">
-    <input type="text" id="placeY">
-    <input type="text" id="placedir">
-    <button class="btn btn-primary btn-lg btn-block" {{action 'place'}} >Place</button>
+    {{input type="text" class="form-control col-xs-12 col-s-4" id="placeX"}}      
+    {{input type="text" class="form-control col-xs-12 col-s-4" id="placeY"}}
+    {{input type="text" class="form-control col-xs-12 col-s-4" id="placeDir"}}
+    <button class="btn btn-primary btn-lg btn-block" {{action "place"}} >Place</button>
   </div>
   <hr>
   <div class="row">
-    <input type="text" id="reportField">
-    <button class="btn btn-primary btn-lg btn-block" {{action 'report'}} >Move</button>
+    {{input type="text" class="form-control col-xs-12 col-s-4" id="moveField"}}
+    <button class="btn btn-primary btn-lg btn-block" {{action "move"}} >Move</button>
   </div>
   <hr>
   <div class="row">
-    <input type="text" id="reportField">
-    <button class="btn btn-primary btn-lg btn-block" {{action 'left'}} >Left</button>
+    {{input type="text" class="form-control col-xs-12 col-s-4" id="left"}}    
+    <button class="btn btn-primary btn-lg btn-block" {{action "left"}} >Left</button>
   </div>
   <hr>
   <div class="row">
-    <input type="text" id="reportField">
-    <button class="btn btn-primary btn-lg btn-block" {{action 'right'}} >Right</button>
+    {{input type="text" class="form-control col-xs-12 col-s-4" id="right"}}
+    <button class="btn btn-primary btn-lg btn-block" {{action "right"}} >Right</button>
+  </div>
+  <hr>
+  <div class="row">
+    {{input type="text" class="form-control col-xs-12 col-s-4" id="reportField"}}
+    <button class="btn btn-primary btn-lg btn-block" {{action "move"}} >Report</button>
   </div>
 </div>
 
