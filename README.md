@@ -6,7 +6,7 @@ see toybot.js for core functionality
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/matty-digital/toyrobot.git`
 * `cd toybot-app`
 * `npm install`
 
